@@ -11,12 +11,22 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
-
+import { MatListModule } from '@angular/material/list';
+import { AreaComponent } from './widgets/area/area.component';
+import { CardComponent } from './widgets/card/card.component';
+import { PieComponent } from './widgets/pie/pie.component';
+import { LineComponent } from './widgets/line/line.component';
+import { BarComponent } from './widgets/bar/bar.component';
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
+    AreaComponent,
+    CardComponent,
+    PieComponent,
+    LineComponent,
+    BarComponent,
   ],
   imports: [
     CommonModule,
@@ -27,12 +37,18 @@ import { MatMenuModule } from '@angular/material/menu';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatMenuModule
+    MatMenuModule,
+    MatListModule
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
+    AreaComponent,
+    CardComponent,
+    PieComponent,
+    LineComponent,
+    BarComponent
   ]
 })
 export class SharedModule { }

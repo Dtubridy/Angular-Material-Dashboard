@@ -1,1 +1,30 @@
-<p>dashboard works!</p>
+<div>
+    <angular-dashboard-area [data]="chartData"></angular-dashboard-area>
+</div>
+<mat-divider></mat-divider>
+<br>
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" class="stats-cards">
+    <mat-card fxFlex="25">
+        <angular-dashboard-card label="New Users" total="12k" percentage="50" [data]="pieData"></angular-dashboard-card>
+    </mat-card>
+    <mat-card fxFlex="25">
+        <angular-dashboard-card label="Users Retention" total="10k" percentage="40" [data]="pieData"></angular-dashboard-card>
+    </mat-card>
+    <mat-card fxFlex="25">
+        <angular-dashboard-card label="Users Engagement" total="8k" percentage="30" [data]="pieData"></angular-dashboard-card>
+    </mat-card>
+    <mat-card fxFlex="25">
+        <angular-dashboard-card label="Referral" total="6k" percentage="20" [data]="pieData"></angular-dashboard-card>
+    </mat-card>
+</div>
+<br>
+<mat-divider></mat-divider>
+<br>
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
+    <div fxFlex="50">
+        <angular-dashboard-bar [data]="pieData"></angular-dashboard-bar>
+    </div>
+    <div fxFlex="50">
+        <angular-dashboard-pie [data]="pieData"></angular-dashboard-pie>
+    </div>
+</div>

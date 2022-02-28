@@ -1,6 +1,6 @@
 <mat-toolbar color="primary">
     <mat-toolbar-row>
-        <button mat-icon-button>
+        <button mat-icon-button (click)="toggleSidebar()">
             <mat-icon>menu</mat-icon>
         </button>
         <span>Logo</span>
@@ -23,6 +23,7 @@
                     <mat-menu #menu="matMenu">
                       <button mat-menu-item>
                           <mat-icon>exit_to_app</mat-icon>
+                          Sign Out
                       </button>
                     </mat-menu>
                 </li>

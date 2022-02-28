@@ -11,6 +11,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { DashboardService } from '../../modules/dashboard.service';
 
 @NgModule({
   declarations: [
@@ -29,5 +30,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatPaginatorModule,
     MatTableModule
   ],
+  providers: [ DashboardService ]
 })
 export class DefaultModule { }
