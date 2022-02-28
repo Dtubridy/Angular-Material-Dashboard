@@ -1,0 +1,13 @@
+<angular-dashboard-header></angular-dashboard-header>
+<router-outlet></router-outlet>
+
+<mat-drawer-container>
+    <mat-drawer mode="side" opened>
+        <angular-dashboard-sidebar></angular-dashboard-sidebar>
+    </mat-drawer>
+    <mat-drawer-content>
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+</mat-drawer-container>
+
+<angular-dashboard-footer></angular-dashboard-footer>
